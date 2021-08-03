@@ -15,9 +15,9 @@ class CreateSalarySheetsTable extends Migration
     {
         Schema::create('salary_sheets', function (Blueprint $table) {
             $table->id();
-            $table->int('employee_id');
-            $table->int('total_days');
-            $table->int('attendance');
+            $table->integer('employee_id');
+            $table->integer('total_days');
+            $table->integer('attendance');
             $table->double('basic');
             $table->double('house_rent');
             $table->double('medical_allowance');

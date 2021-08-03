@@ -16,8 +16,8 @@ class CreateSalariesTable extends Migration
         Schema::create('salaries', function (Blueprint $table) {
             $table->id();
             $table->timestamp('report_month');
-            $table->int('report_by_user_id');
-            $table->int('is_complete');
+            $table->integer('report_by_user_id');
+            $table->integer('is_complete');
             $table->timestamps();
         });
     }

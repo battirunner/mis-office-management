@@ -15,16 +15,16 @@ class CreateMonthlyLedgerModifyTable extends Migration
     {
         Schema::create('monthly_ledger_modify', function (Blueprint $table) {
             $table->id();
-            $table->int('accounts_id');
+            $table->integer('accounts_id');
             $table->dateTime('entry_date');
-            $table->int('particular');
+            $table->integer('particular');
             $table->double('gm');
             $table->double('quantity');
             $table->double('per_kg');
             $table->double('total_bill');
             $table->double('balance');
             $table->string('currency');
-            $table->int('reported_by_salary');
+            $table->integer('reported_by_salary');
             $table->timestamps();
         });
     }

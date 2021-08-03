@@ -15,13 +15,13 @@ class CreateIncomeTable extends Migration
     {
         Schema::create('income', function (Blueprint $table) {
             $table->id();
-            $table->int('accounts_id');
-            $table->int('company_id');
-            $table->int('dealings');
+            $table->integer('accounts_id');
+            $table->integer('company_id');
+            $table->integer('dealings');
             $table->double('amount');
             $table->string('currency');
             $table->dateTime('report_month');
-            $table->int('reported_by_salary');
+            $table->integer('reported_by_salary');
             $table->timestamps();
         });
     }

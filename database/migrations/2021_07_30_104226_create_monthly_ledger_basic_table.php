@@ -15,14 +15,14 @@ class CreateMonthlyLedgerBasicTable extends Migration
     {
         Schema::create('monthly_ledger_basic', function (Blueprint $table) {
             $table->id();
-            $table->int('accounts_id');
+            $table->integer('accounts_id');
             $table->dateTime('entry_date');
-            $table->int('particular');
+            $table->integer('particular');
             $table->double('debit');
             $table->double('crebit');
             $table->double('balance');
             $table->string('currency');
-            $table->int('reported_by_user_id');
+            $table->integer('reported_by_user_id');
             $table->timestamps();
         });
     }

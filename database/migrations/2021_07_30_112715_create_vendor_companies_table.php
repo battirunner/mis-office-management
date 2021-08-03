@@ -17,8 +17,8 @@ class CreateVendorCompaniesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('code_name');
-            $table->mediumText('details');
-            $table->int('dealings_type');
+            $table->text('details');
+            $table->integer('dealings_type');
             $table->timestamps();
         });
     }

@@ -15,13 +15,13 @@ class CreateWarehouseTeble extends Migration
     {
         Schema::create('warehouse_teble', function (Blueprint $table) {
             $table->id();
-            $table->int('user_id');
-            $table->int('product_id');
+            $table->integer('user_id');
+            $table->integer('product_id');
             $table->double('quantity');
             $table->string('unit');
             $table->string('vendor');
-            $table->int('entry_type');
-            $table->mediumText('related_message');
+            $table->integer('entry_type');
+            $table->text('related_message');
             $table->timestamps();
         });
     }

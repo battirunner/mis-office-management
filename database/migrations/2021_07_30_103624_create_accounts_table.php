@@ -16,8 +16,8 @@ class CreateAccountsTable extends Migration
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->int('account_type');
-            $table->mediumTexts('details');
+            $table->integer('account_type');
+            $table->text('details');
             $table->timestamps();
         });
     }

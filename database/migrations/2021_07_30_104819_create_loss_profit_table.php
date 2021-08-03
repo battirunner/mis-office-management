@@ -15,12 +15,12 @@ class CreateLossProfitTable extends Migration
     {
         Schema::create('loss_profit', function (Blueprint $table) {
             $table->id();
-            $table->mediumText('details');
+            $table->text('details');
             $table->double('amount');
             $table->string('currency');
             $table->dateTime('report_month');
-            $table->int('loss_profit_stats');
-            $table->int('reported_by_salary');
+            $table->integer('loss_profit_stats');
+            $table->integer('reported_by_salary');
             $table->timestamps();
         });
     }
